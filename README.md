@@ -8,33 +8,51 @@ I turn technical complexity into clear plans and measurable outcomes.
 
 [Portfolio](https://michelleyun.github.io/portfolio-2/) · [LinkedIn](https://www.linkedin.com/in/michelleyun5) · [Email](mailto:michelleyoungyun@gmail.com)
 
+Seven years of experience across audience research, data analytics, and solutions engineering. I started my career in consumer intelligence, helping brands and agencies understand their audiences and make more informed marketing decisions. I then moved into solutions engineering, where I work closely with customers, product teams, engineers, and commercial stakeholders.
+
 ## Case studies
 
 | | Case study | Focus |
 |---|---|---|
-| 01 | [Building a go-to-market strategy from the ground up](https://michelleyun.github.io/portfolio-2/#case-01) | Go-to-market |
-| 02 | [Defining what to build for a strategic partner](https://michelleyun.github.io/portfolio-2/#case-02) | Product strategy |
-| 03 | [Building a better way to manage technical integrations](https://michelleyun.github.io/portfolio-2/#case-03) | Program management |
-| 04 | [Bringing a product experience to life with AI](https://michelleyun.github.io/portfolio-2/#case-04) | AI prototyping |
-| 05 | [Turning consumer insights into actionable marketing strategies](https://michelleyun.github.io/portfolio-2/#case-05) | Consumer insights |
-| 06 | [Winning a head-to-head evaluation against an incumbent](https://michelleyun.github.io/portfolio-2/#case-06) | Competitive strategy |
+| 01 | [Building a go-to-market strategy from the ground up](case-studies/01-go-to-market.md) | Go-to-market |
+| 02 | [Defining what to build for a strategic partner](case-studies/02-product-strategy.md) | Product strategy |
+| 03 | [Building a better way to manage technical integrations](case-studies/03-program-management.md) | Program management |
+| 04 | [Bringing a product experience to life with AI](case-studies/04-ai-prototyping.md) | AI prototyping |
+| 05 | [Turning consumer insights into actionable marketing strategies](case-studies/05-consumer-insights.md) | Consumer insights |
+| 06 | [Winning a head-to-head evaluation against an incumbent](case-studies/06-competitive-strategy.md) | Competitive strategy |
 
-Also: [Photography](https://michelleyun.github.io/portfolio-2/photography.html), portraits of some very good dogs.
+## Experience
 
-## How the site is built
+- **Integral Ad Science** · Solutions Engineer · 2025–present
+- **Nexxen** (formerly Amobee) · Solutions Engineer, Enterprise · 2021–2025
+- **Nexxen** (formerly Amobee) · Analyst, Advanced Insights & Data · 2019–2021
 
-Plain HTML, CSS and JavaScript, with no framework and no build step needed to host it.
+**Independent:** Succession, go-to-market consultant · Michelle Yun Photography
+
+**Education:** Northwestern University, B.A. Communication Studies, concentration in Integrated Marketing Communications
+
+## Photography
+
+Portraits of some very good dogs, shot around Chicago. [See them on the site →](https://michelleyun.github.io/portfolio-2/#photography)
+
+## Design system
+
+The colors, type and components behind the site. [See the design system →](design-system/)
+
+[![Design system overview](design-system/board/01-overview.png)](design-system/)
+
+## About this repository
+
+This repository powers my [portfolio site](https://michelleyun.github.io/portfolio-2/), published with GitHub Pages.
 
 ```
-index.html            Home: the case study index with a live preview
-photography.html      Dog portraits, drawn in characters until you hover
-about.html            About, background, toolkit and contact
-case-01.html … case-06.html   One page per case study
-css/site.css          All styles, including the case study colours
-js/site.js            Character art, clock, menu, tabs and the case 04 prototype
-assets/               Portrait, photos, KJ animations, favicon
-og.png                Link preview image
-build/                The script that writes the pages from one file of copy
+index.html        the live site: the case study index
+case-01.html …    one page per case study, 01 to 06
+about.html        about, background, toolkit and contact
+photography.html  dog portraits
+og.png            link preview image
+case-studies/     each case study, readable here on GitHub
+assets/           portraits, dog photography, KJ animations, css and js
+design-system/    colors, type, spacing and components
+build/            the script that writes the pages from one file of copy
 ```
-
-To change wording, edit `build/content.py` (or `build/visuals.py` for the case study visuals), then run `python3 build/build.py .` from the repo root. It needs Python 3 with Pillow.

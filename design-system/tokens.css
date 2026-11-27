@@ -1,0 +1,38 @@
+/* Index design tokens
+   The site's colors, type and shape, in one place.
+   The live values are at the top of assets/css/site.css; keep the two in step. */
+
+:root {
+  /* Paper and ink */
+  --bg:     #fafaf8;  /* page */
+  --ink:    #141414;  /* text, active pills */
+  --mute:   #6b6964;  /* secondary text, labels */
+  --line:   #e6e4df;  /* hairlines, pill borders */
+  --surf:   #f1efea;  /* cards, toolkit groups */
+  --surf-2: #eeece7;  /* preview pane, hovered rows, switches */
+  --paper:  #ffffff;  /* boxed visuals */
+
+  /* Case study colors: a mid-tone (c), a light tint (t) and a deep shade (d).
+     Mid-tones fill tags, bands and the preview pane. Tints fill the summary cards.
+     Deep shades draw the character art and small accents. Text on any of them is --ink. */
+  --c01: #a9bcd0; --t01: #e3e9f0; --d01: #3f5870;  /* blue   · Go-to-market */
+  --c02: #dfb59c; --t02: #f5e8df; --d02: #7a4a30;  /* orange · Product strategy */
+  --c03: #b5c3ac; --t03: #e7ece3; --d03: #4c5e43;  /* green  · Program management */
+  --c04: #b9b1d0; --t04: #ebe8f3; --d04: #554a78;  /* purple · AI prototyping */
+  --c05: #d8c7a3; --t05: #f2ecdf; --d05: #6b5a33;  /* yellow · Consumer insights */
+  --c06: #d9afbe; --t06: #f5e6eb; --d06: #7a4258;  /* pink   · Competitive strategy */
+
+  /* Type: two families */
+  --font: 'Geist', system-ui, -apple-system, 'Segoe UI', sans-serif;      /* everything you read */
+  --mono: 'Geist Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace; /* small labels, numbers, character art */
+
+  /* Shape and layout */
+  --pill: 999px;                       /* every button, tag and switch */
+  --radius: 20px;                      /* panes and bands; cards use 16px, boxed visuals 18px */
+  --aside: clamp(340px, 28vw, 430px);  /* the index column on desktop */
+  --pad: 36px;                         /* index column padding; 20px on phones */
+  --case-section-gap: 60px;            /* between Context, Approach, Solution, Impact */
+
+  /* Motion */
+  --ease: cubic-bezier(.2, .7, .2, 1); /* fades and color changes only */
+}

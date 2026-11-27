@@ -32,7 +32,7 @@ def head(title, desc, P, path):
 <link rel="icon" href="{P}assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{P}css/site.css">
+<link rel="stylesheet" href="{P}assets/css/site.css">
 </head>
 '''
 
@@ -82,7 +82,7 @@ def cvars(i):
 
 
 def end(P):
-    return f'<script src="{P}js/site.js" defer></script>\n</body>\n</html>\n'
+    return f'<script src="{P}assets/js/site.js" defer></script>\n</body>\n</html>\n'
 
 
 # ---------- Home ----------
