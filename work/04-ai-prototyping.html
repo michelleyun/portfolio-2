@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bringing a product experience to life with AI · Michelle Yun</title>
+<meta name="description" content="Using AI-assisted development to build an interactive prototype with realistic, partner-specific data.">
+<link rel="canonical" href="https://michelleyun.github.io/portfolio-2/work/04-ai-prototyping.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://michelleyun.github.io/portfolio-2/work/04-ai-prototyping.html">
+<meta property="og:title" content="Bringing a product experience to life with AI · Michelle Yun">
+<meta property="og:description" content="Using AI-assisted development to build an interactive prototype with realistic, partner-specific data.">
+<meta property="og:image" content="https://michelleyun.github.io/portfolio-2/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Michelle Yun, written in characters">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#fafaf8">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/site.css">
+</head>
+<body class="case-page" id="top" style="--c:var(--c04);--t:var(--t04);--d:var(--d04)">
+<div class="shell">
+<aside class="side case-side">
+<div class="top">
+  <a class="brand" href="../index.html">Michelle Yun</a>
+  <nav class="switch" aria-label="Work or photography"><a href="../index.html" aria-current="page">Work</a><a href="../photography.html">Photography</a></nav>
+  <button class="pill menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+</div>
+<nav class="menu" id="menu" aria-label="Site">
+  <a href="../index.html">Work</a><a href="../photography.html">Photography</a><a href="../about.html#about">About</a><a href="../about.html#toolkit">Toolkit</a><a href="../about.html#contact">Contact</a>
+</nav>
+<a class="pill" href="../index.html#work" style="align-self:flex-start">← Back to all work</a>
+<nav class="side-nav" aria-label="Case study sections"><a href="#context">Context</a><a href="#approach">Approach</a><a href="#solution">Solution</a><a href="#impact">Impact</a></nav>
+<div class="case-nav">
+  <a class="pill round" href="03-program-management.html" aria-label="Previous case study: Building a better way to manage technical integrations">←</a>
+  <a class="pill round" href="05-consumer-insights.html" aria-label="Next case study: Turning consumer insights into actionable marketing strategies">→</a>
+  <span class="mono mute" style="margin-left:6px">04 / 06</span>
+</div>
+<div class="side-foot">
+  <nav class="links" aria-label="More"><a class="pill" href="../about.html#about">About</a><a class="pill" href="../about.html#toolkit">Toolkit</a><a class="pill" href="../about.html#contact">Contact</a></nav>
+  <a class="mail" href="mailto:michelleyoungyun@gmail.com">michelleyoungyun@gmail.com</a>
+  <a href="https://www.linkedin.com/in/michelleyun5" target="_blank" rel="noopener">LinkedIn ↗</a>
+</div>
+</aside>
+<main class="main">
+<article class="case">
+  <div class="band"><canvas class="art" data-band="3" aria-hidden="true"></canvas></div>
+  <header class="case-h">
+    <div class="k"><span class="mono mute">04</span><span class="tag">AI prototyping</span></div>
+    <h1>Bringing a product experience to life with AI</h1>
+    <div class="facts"><div><small>Company</small>Integral Ad Science</div><div><small>Role</small>Solutions Engineer</div><div><small>Deliverable</small>Interactive product demo</div></div>
+  </header>
+  <div class="summary"><div><b>Challenge</b><p>A partner wanted to explore the advertiser reporting experience, but there was no interactive demo and real advertiser data could not be shared.</p></div><div><b>What I did</b><p>Used generative AI to turn existing product designs into a browser-based prototype with synthetic data, building and refining it without dedicated engineering support.</p></div><div><b>Outcome</b><p>The partner could explore the advertiser reporting experience firsthand, without needing platform access or real data.</p></div></div>
+  <div class="prose">
+    <section class="csec" id="context"><h2>Context</h2><p>A platform partner wanted to understand how advertisers would experience the reporting platform and asked for screenshots or a video walkthrough. Static screenshots would not truly show how the product worked, and a live demo using real advertiser data was not an option.</p></section>
+    <section class="csec" id="approach"><h2>Approach</h2><p>I wanted to give the partner a useful way to evaluate the product, rather than just send static screens. My goal was to make the experience as realistic and explorable as possible, using data that reflected the partner’s environment, while protecting real data.</p></section>
+    <section class="csec" id="solution"><h2>Solution</h2><h3>Interactive product demo</h3><p>A shareable, interactive product demo that allowed the partner to explore the reporting experience without requiring platform access or exposing real advertiser data. The prototype recreated key elements of the advertiser experience: reporting dashboards, interactive filters and dropdown menus, metric definitions and tooltips, and reporting tables and data exports.</p><h3>Realistic, partner-specific data</h3><p>Because each partner’s advertisers see different inventory, metrics, and performance ranges, I built a synthetic dataset modeled on this partner’s environment. The data stayed consistent across every view, so filters, totals, and metric definitions behaved as they would in a live account, giving the partner a credible preview of what their advertisers would actually see.</p><figure class="vis"><figcaption>Prototype preview</figcaption><div class="demo" id="demo">
+<div class="dbar"><span class="logo">Advertiser reporting</span>
+<label>Date range<select id="f-range"><option value="7">Last 7 days</option><option value="30" selected>Last 30 days</option></select></label>
+<label>Channel<select id="f-chan"><option value="all">All</option><option>Display</option><option>Video</option><option>Mobile app</option></select></label>
+<label>Campaign<select id="f-camp"><option value="all">All</option><option>Spring awareness</option><option>Product launch</option><option>Retargeting</option><option>Holiday promo</option></select></label></div>
+<div class="kpis" aria-live="polite"><div><small>Impressions</small><b id="k-imp">11,280,934</b></div><div><small>Viewability</small><b id="k-v">72.4%</b></div><div><small>Brand safety</small><b id="k-b">96.2%</b></div><div><small>Invalid traffic</small><b id="k-i">1.2%</b></div></div>
+<div class="scroll-x"><table class="tbl dt"><thead><tr><th scope="col">Campaign</th><th scope="col">Impressions</th><th scope="col" title="Share of ads that had a real chance to be seen">Viewability</th><th scope="col" title="Share of ads that ran next to suitable content">Brand safety</th><th scope="col" title="Share of traffic that came from bots or other non-human sources">Invalid traffic</th></tr></thead>
+<tbody id="d-body"><tr><td>Spring awareness</td><td>1,989,765</td><td>70.7%</td><td>96.2%</td><td>1.2%</td></tr><tr><td>Product launch</td><td>2,495,226</td><td>71.3%</td><td>96.3%</td><td>1.2%</td></tr><tr><td>Retargeting</td><td>3,071,527</td><td>73.0%</td><td>96.0%</td><td>1.2%</td></tr><tr><td>Holiday promo</td><td>3,724,416</td><td>73.6%</td><td>96.2%</td><td>1.2%</td></tr></tbody></table></div>
+<p class="note">Change a filter: every total, rate and row recalculates from the same underlying data.</p></div></figure></section>
+  </div>
+  <section class="csec" id="impact"><h2>Impact</h2><div class="impact"><div><small>01</small><b>Rapid prototyping</b><p>From concept to functional product demo.</p></div><div><small>02</small><b>Data privacy</b><p>Realistic, partner-specific data without exposing any real advertiser information.</p></div><div><small>03</small><b>Hands-on evaluation</b><p>Let the partner test real workflows instead of reviewing static screens.</p></div></div></section>
+  <a class="next" href="05-consumer-insights.html"><span><small>Next · 05</small><b>Turning consumer insights into actionable marketing strategies</b></span><span class="pill solid">Read →</span></a>
+</article>
+<footer class="foot">
+  <div class="kj" aria-hidden="true"><img src="../assets/kj/kj-footer.webp" alt="" width="670" height="531" loading="lazy"></div>
+  <div class="foot-row"><span>© 2026 Michelle Yun</span><a href="#top">Back to top ↑</a></div>
+</footer>
+</main>
+</div>
+<script src="../js/site.js" defer></script>
+</body>
+</html>
