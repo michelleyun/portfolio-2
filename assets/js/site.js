@@ -77,13 +77,17 @@
       const lines = fit(two) > fit(one) * 1.15 ? two : one;
       const fsz = fit(lines);
       c.font = `600 ${fsz}px Geist, system-ui, sans-serif`;
-      lines.forEach((l, i) => c.fillText(l, w / 2, h / 2 + (i - (lines.length - 1) / 2) * fsz * 0.92));
+      c.strokeStyle = '#fff'; c.lineWidth = fsz * 0.03; c.lineJoin = 'round'; try { c.letterSpacing = (fsz * 0.05) + 'px'; } catch (e) {}
+      lines.forEach((l, i) => {
+        const y = h / 2 + (i - (lines.length - 1) / 2) * fsz * 0.92;
+        c.fillText(l, w / 2, y); c.strokeText(l, w / 2, y);
+      });
     });
     if (!s) return;
     draw(cv, (x, y) => {
       const v = s(x, y);
-      return v > 0.5 ? 0.93 + 0.07 * Math.sin(x * 0.13 + y * 0.07) : (Math.sin(x * 0.031 + y * 0.047) * Math.sin(x * 0.017 - y * 0.023) > 0.7 ? 0.09 : 0);
-    }, { ink, bg, fs: w < 500 ? 6 : 11 });
+      return v > 0.5 ? (Math.sin(x * 0.21 + y * 0.13) > -0.2 ? 1 : 0.82) : (Math.sin(x * 0.031 + y * 0.047) * Math.sin(x * 0.017 - y * 0.023) > 0.8 ? 0.09 : 0);
+    }, { ink, bg, fs: w < 500 ? 6 : 9 });
   }
 
   // One slow-moving pattern per case study
