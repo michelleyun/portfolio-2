@@ -89,10 +89,11 @@ def end(P):
 def home():
     P = ''
     rows = ''.join(
-        f'''<li><a href="work/{c["slug"]}.html" data-i="{i}" data-n="{c["n"]}" data-tag="{e(c["tag"])}" data-title="{e(c["title"])}" data-line="{e(c["line"])}" style="{cvars(i)}">
+        f'''<li><a href="{c["slug"]}.html" data-i="{i}" data-n="{c["n"]}" data-tag="{e(c["tag"])}" data-title="{e(c["title"])}" data-line="{e(c["line"])}" style="{cvars(i)}">
 <span class="n">{c["n"]}</span><span><span class="t">{e(c["title"])}</span><span class="s">{e(c["tag"])}</span><span class="tag">{e(c["tag"])}</span></span><span class="dot"></span></a></li>'''
         for i, c in enumerate(CASES))
     html = head('Michelle Yun', LINE, P, '') + f'''<body class="home" id="top">
+<script>(function(){{var h=location.hash.slice(1),m={{about:'about.html#about',toolkit:'about.html#toolkit',contact:'about.html#contact',background:'about.html#background',photography:'photography.html'}};if(/^case-0[1-6]$/.test(h))location.replace(h+'.html');else if(m[h])location.replace(m[h]);}})();</script>
 <div class="intro" id="intro" aria-hidden="true">
   <div class="r"><b>Michelle Yun</b><button class="pill" type="button" id="intro-skip">Skip intro</button></div>
   <img src="assets/kj/kj-intro.gif" alt="" width="724" height="724">
@@ -121,7 +122,7 @@ def home():
   <div class="pane" id="pane"><h1 class="sr">Michelle Yun</h1><canvas class="art" aria-hidden="true"></canvas></div>
   <div class="pane-cap fade" id="cap">
     <div><span class="tag" id="cap-tag" hidden></span><h2 id="cap-title" style="margin-top:10px">6 selected case studies</h2><p id="cap-line">Hover to preview, click to read the full case study.</p></div>
-    <a class="pill solid" id="cap-link" href="work/{CASES[0]["slug"]}.html">Start with 01 →</a>
+    <a class="pill solid" id="cap-link" href="{CASES[0]["slug"]}.html">Start with 01 →</a>
   </div>
   {foot(P)}
 </main>
@@ -190,7 +191,7 @@ def about():
         for t, c in items:
             if c:
                 slug = next(x['slug'] for x in CASES if x['n'] == c)
-                lis += f'<li><a href="work/{slug}.html"><span>{e(t)}</span><small>↗{c}</small></a></li>'
+                lis += f'<li><a href="{slug}.html"><span>{e(t)}</span><small>↗{c}</small></a></li>'
             else:
                 lis += f'<li><span>{e(t)}</span></li>'
         kits += f'<div><h3>{e(name)}</h3><ul>{lis}</ul></div>'
@@ -237,12 +238,12 @@ def about():
 
 # ---------- Case studies ----------
 def cases():
-    P = '../'
+    P = ''
     for i, c in enumerate(CASES):
         prv, nxt = CASES[i - 1], CASES[(i + 1) % 6]
         nav = ''.join(f'<a href="#{k.lower()}">{k}</a>' for k in ['Context', 'Approach', 'Solution', 'Impact'])
         imp = ''.join(f'<div><small>{k + 1:02d}</small><b>{e(t)}</b><p>{e(d)}</p></div>' for k, (t, d) in enumerate(c['impact']))
-        html = head(c['title'], c['line'], P, f'work/{c["slug"]}.html') + f'''<body class="case-page" id="top" style="{cvars(i)}">
+        html = head(c['title'], c['line'], P, f'{c["slug"]}.html') + f'''<body class="case-page" id="top" style="{cvars(i)}">
 <div class="shell">
 <aside class="side case-side">
 {top(P, "work")}
@@ -276,7 +277,7 @@ def cases():
 </main>
 </div>
 ''' + end(P)
-        page(f'work/{c["slug"]}.html', html)
+        page(f'{c["slug"]}.html', html)
 
 
 if __name__ == '__main__':

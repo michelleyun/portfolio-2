@@ -6,7 +6,7 @@ LINKEDIN = 'https://www.linkedin.com/in/michelleyun5'
 LINE = 'I turn technical complexity into clear plans and measurable outcomes.'
 
 CASES = [
-    dict(n='01', slug='01-go-to-market', tag='Go-to-market',
+    dict(n='01', slug='case-01', tag='Go-to-market',
          title='Building a go-to-market strategy from the ground up',
          line='Connecting product capabilities with market needs through audience segmentation, sales enablement, and firsthand customer research.',
          company='Succession', role='Go-to-market consultant', deliverable='Go-to-market strategy & sales playbook',
@@ -18,7 +18,7 @@ CASES = [
          impact=[('GTM strategy', 'Defined four potential customer segments, developed audience-specific positioning, and created a structured sales playbook.'),
                  ('Customer insight', 'Identified adoption barriers and product needs through trial-user interviews.'),
                  ('Early commercial traction', 'The product attracted paying customers, providing an initial signal of willingness to pay.')]),
-    dict(n='02', slug='02-product-strategy', tag='Product strategy',
+    dict(n='02', slug='case-02', tag='Product strategy',
          title='Defining what to build for a strategic partner',
          line='Turning an ambiguous partner request into clear requirements, solution options, and product opportunities.',
          company='Integral Ad Science', role='Solutions Engineer', deliverable='Product assessment & solution design',
@@ -30,7 +30,7 @@ CASES = [
          impact=[('Product requirements', "Translated the partner's need into clear, prioritized product requirements."),
                  ('Build scope', 'Identified which capabilities to extend and which to build new.'),
                  ('Product direction', "Recommended an approach that met the partner's needs and fit within the existing product portfolio.")]),
-    dict(n='03', slug='03-program-management', tag='Program management',
+    dict(n='03', slug='case-03', tag='Program management',
          title='Building a better way to manage technical integrations',
          line='Managing interconnected product initiatives, technical dependencies, and cross-functional launch readiness.',
          company='Integral Ad Science', role='Solutions Engineer', deliverable='Integration management framework',
@@ -42,7 +42,7 @@ CASES = [
          impact=[('Workstream coordination', 'Improved accountability and coordination across teams.'),
                  ('Proactive risk management', 'Earlier identification of blockers and better alignment on deadlines.'),
                  ('Cross-team adoption', 'A reusable framework adopted across Solutions Engineering.')]),
-    dict(n='04', slug='04-ai-prototyping', tag='AI prototyping',
+    dict(n='04', slug='case-04', tag='AI prototyping',
          title='Bringing a product experience to life with AI',
          line='Using AI-assisted development to build an interactive prototype with realistic, partner-specific data.',
          company='Integral Ad Science', role='Solutions Engineer', deliverable='Interactive product demo',
@@ -54,7 +54,7 @@ CASES = [
          impact=[('Rapid prototyping', 'From concept to functional product demo.'),
                  ('Data privacy', 'Realistic, partner-specific data without exposing any real advertiser information.'),
                  ('Hands-on evaluation', 'Let the partner test real workflows instead of reviewing static screens.')]),
-    dict(n='05', slug='05-consumer-insights', tag='Consumer insights',
+    dict(n='05', slug='case-05', tag='Consumer insights',
          title='Turning consumer insights into actionable marketing strategies',
          line='Using consumer research to help brands identify audience opportunities and inform marketing strategy.',
          company='Nexxen', role='Analyst, Advanced Insights & Data', deliverable='Client-facing research presentations',
@@ -66,7 +66,7 @@ CASES = [
          impact=[('Sales enablement', 'Strategic materials for opening conversations with prospective clients.'),
                  ('Audience strategy', 'Clear recommendations on who to target and why.'),
                  ('Market intelligence', 'Timely insights into emerging trends and major events.')]),
-    dict(n='06', slug='06-competitive-strategy', tag='Competitive strategy',
+    dict(n='06', slug='case-06', tag='Competitive strategy',
          title='Winning a head-to-head evaluation against an incumbent',
          line='Leading a head-to-head evaluation from testing methodology and customer enablement to optimization and commercial storytelling.',
          company='Integral Ad Science', role='Solutions Engineer', deliverable='Test design & performance optimization',
@@ -106,7 +106,7 @@ BACKGROUND = [
         ('Nexxen (formerly Amobee)', 'Solutions Engineer, Enterprise', 'Aug 2021 – Apr 2025', False, None),
         ('Nexxen (formerly Amobee)', 'Analyst, Advanced Insights & Data', 'Aug 2019 – Aug 2021', False, None)]),
     ('Independent projects', [
-        ('Succession', 'Go-to-Market Consultant', 'Aug 2025 – Present', True, ('Case study ↗', 'work/01-go-to-market.html')),
+        ('Succession', 'Go-to-Market Consultant', 'Aug 2025 – Present', True, ('Case study ↗', 'case-01.html')),
         ('Michelle Yun Photography', '', 'Jun 2019 – Present', True, ('Photography ↗', 'photography.html'))]),
     ('Education', [
         ('Northwestern University', 'B.A. Communication Studies, concentration in Integrated Marketing Communications', 'Sep 2015 – Jun 2019', False, None)]),

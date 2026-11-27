@@ -12,12 +12,12 @@ I turn technical complexity into clear plans and measurable outcomes.
 
 | | Case study | Focus |
 |---|---|---|
-| 01 | [Building a go-to-market strategy from the ground up](https://michelleyun.github.io/portfolio-2/work/01-go-to-market.html) | Go-to-market |
-| 02 | [Defining what to build for a strategic partner](https://michelleyun.github.io/portfolio-2/work/02-product-strategy.html) | Product strategy |
-| 03 | [Building a better way to manage technical integrations](https://michelleyun.github.io/portfolio-2/work/03-program-management.html) | Program management |
-| 04 | [Bringing a product experience to life with AI](https://michelleyun.github.io/portfolio-2/work/04-ai-prototyping.html) | AI prototyping |
-| 05 | [Turning consumer insights into actionable marketing strategies](https://michelleyun.github.io/portfolio-2/work/05-consumer-insights.html) | Consumer insights |
-| 06 | [Winning a head-to-head evaluation against an incumbent](https://michelleyun.github.io/portfolio-2/work/06-competitive-strategy.html) | Competitive strategy |
+| 01 | [Building a go-to-market strategy from the ground up](https://michelleyun.github.io/portfolio-2/#case-01) | Go-to-market |
+| 02 | [Defining what to build for a strategic partner](https://michelleyun.github.io/portfolio-2/#case-02) | Product strategy |
+| 03 | [Building a better way to manage technical integrations](https://michelleyun.github.io/portfolio-2/#case-03) | Program management |
+| 04 | [Bringing a product experience to life with AI](https://michelleyun.github.io/portfolio-2/#case-04) | AI prototyping |
+| 05 | [Turning consumer insights into actionable marketing strategies](https://michelleyun.github.io/portfolio-2/#case-05) | Consumer insights |
+| 06 | [Winning a head-to-head evaluation against an incumbent](https://michelleyun.github.io/portfolio-2/#case-06) | Competitive strategy |
 
 Also: [Photography](https://michelleyun.github.io/portfolio-2/photography.html), portraits of some very good dogs.
 
@@ -29,7 +29,7 @@ Plain HTML, CSS and JavaScript, with no framework and no build step needed to ho
 index.html            Home: the case study index with a live preview
 photography.html      Dog portraits, drawn in characters until you hover
 about.html            About, background, toolkit and contact
-work/                 One page per case study
+case-01.html … case-06.html   One page per case study
 css/site.css          All styles, including the case study colours
 js/site.js            Character art, clock, menu, tabs and the case 04 prototype
 assets/               Portrait, photos, KJ animations, favicon
